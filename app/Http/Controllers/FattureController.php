@@ -8,6 +8,13 @@ class FattureController extends Controller
 {
     public function fattureView()
     {
-        return view('fatture');
+    $titolo = 'Pagina Fatture';
+    $elementi = ['fattura1','fattura2'];
+
+        return view('fatture',[
+            "fatture"=> $elementi,
+            "title" => $titolo,
+        ]);
+
     }
 }

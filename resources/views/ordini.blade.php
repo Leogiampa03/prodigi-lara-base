@@ -3,5 +3,14 @@
 @section('head_title', 'ordini')
 
 @section('content')
+    <div style="color:red">
+        <h1>{{$title}}</h1>
+    </div>
 
+    <ul>
+        @foreach($ordini as $ordine)
+        <li>{{$ordine}}</li>
+        @endforeach
+
+    </ul>
 @endsection
